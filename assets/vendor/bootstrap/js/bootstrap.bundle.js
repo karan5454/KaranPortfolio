@@ -1,20 +1,11 @@
-/*!
-  * Bootstrap v5.2.3 (https://getbootstrap.com/)
-  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory());
 })(this, (function () { 'use strict';
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+
   const MAX_UID = 1000000;
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend'; // Shout-out Angus Croll (https://goo.gl/pxwQGp)
@@ -43,10 +34,7 @@
     let selector = element.getAttribute('data-bs-target');
 
     if (!selector || selector === '#') {
-      let hrefAttribute = element.getAttribute('href'); // The only valid content that could double as a selector are IDs or classes,
-      // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
-      // `document.querySelector` will rightfully complain it is invalid.
-      // See https://github.com/twbs/bootstrap/issues/32273
+      let hrefAttribute = element.getAttribute('href');
 
       if (!hrefAttribute || !hrefAttribute.includes('#') && !hrefAttribute.startsWith('.')) {
         return null;
@@ -1230,15 +1218,6 @@
 
   }
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): carousel.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * Constants
-   */
 
   const NAME$c = 'carousel';
   const DATA_KEY$8 = 'bs.carousel';
@@ -2185,8 +2164,7 @@
   // means it doesn't take into account transforms.
 
   function getLayoutRect(element) {
-    var clientRect = getBoundingClientRect(element); // Use the clientRect sizes if it's not been transformed.
-    // Fixes https://github.com/popperjs/popper-core/issues/1223
+    var clientRect = getBoundingClientRect(element); // 
 
     var width = element.offsetWidth;
     var height = element.offsetHeight;
@@ -3814,15 +3792,7 @@
     preventOverflow: preventOverflow$1
   }, Symbol.toStringTag, { value: 'Module' }));
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): dropdown.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * Constants
-   */
+  
 
   const NAME$a = 'dropdown';
   const DATA_KEY$6 = 'bs.dropdown';
@@ -4364,16 +4334,7 @@
     }
 
   }
-
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/backdrop.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-  /**
-   * Constants
-   */
+   
 
   const NAME$9 = 'backdrop';
   const CLASS_NAME_FADE$4 = 'fade';
